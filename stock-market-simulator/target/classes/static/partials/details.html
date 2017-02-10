@@ -1,0 +1,74 @@
+<!--<div class="center" id="stockInfo">-->
+<!--<a class="readmore" id="remove" data-toggle="modal" href="#remove-modal" title="remove stock from portfolio">Remove</a>-->
+<!--<div id="details-dropdown" class="dropdown-menu">-->
+<!--<span class="label label-default"><a class="dropdown-item" data-toggle="modal" href="#buy-modal">Buy shares</a></span><br>-->
+<!--<span class="label label-default"><a class="dropdown-item" data-toggle="modal" href="#sell-modal">Sell shares</a></span><br>-->
+<!--<span class="label label-default"><a class="dropdown-item" data-toggle="modal" href="#remove-modal">Remove</a></span><br>-->
+<!--</div>-->
+
+
+
+<h1 class="char" id="company-name">{{companyDetails.name}}</h1>
+<div class="dropdown" id="details-dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Options
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+        <li><span class="details-dropdown-item"><a class="dropdown-item" data-toggle="modal" href="#buy-modal">Buy shares</a></span></li>
+        <li><span class="details-dropdown-item"><a class="dropdown-item" data-toggle="modal" href="#sell-modal">Sell shares</a></span></li>
+        <li><span class="details-dropdown-item"><a class="dropdown-item" data-toggle="modal" href="#remove-modal">Remove</a></span></li>
+    </ul>
+</div>
+<br><br/>
+<div id="details-my-shares">
+    <h4>Your shares: {{companyDetails.myShares}} shares
+        <br>
+        Value of shares: ${{round(companyDetails.l * companyDetails.myShares)}}</h4>
+</div>
+
+<input type="hidden" id="details-shares" value="{{companyDetails.myShares}}">
+<input type="hidden" id="details-shares-value" value="{{companyDetails.l * companyDetails.myShares}}">
+<input id="details-funds" type="hidden" value="{{funds}}">
+
+<div class="info col-sm-5">
+    <h5 class="no-margins"><span class="details-field char">Ticker Symbol: </span><span class="details-data light-gray">{{companyDetails.t}}</span></h5>
+    <hr class="no-margins">
+    <h5 class="no-margins"><span class="details-field char">Exchange: </span><span class="details-data light-gray">{{companyDetails.e}}</span></h5>
+    <hr class="no-margins">
+    <h5 class="no-margins"><span class="details-field char">Last Price: </span><span class="details-data light-gray">{{companyDetails.l}}</span></h5>
+</div>
+<div class="info col-sm-5">
+    <h5 class="no-margins"><span class="details-field char">High: </span><span class="details-data light-gray">{{companyDetails.hi}}</span></h5>
+    <hr class="no-margins">
+    <h5 class="no-margins"><span class="details-field char">Low: </span><span class="details-data light-gray">{{companyDetails.lo}}</span></h5>
+    <hr class="no-margins">
+    <h5 class="no-margins"><span class="details-field char">PE: </span><span class="details-data light-gray">{{companyDetails.pe}}</span></h5>
+</div>
+<!--<div class="col-sm-6" id="graph-container"></div>-->
+<div id="graph"></div>
+<input id="t-details" type="hidden" value="{{companyDetails.t}}">
+
+<!--<br>-->
+<!--<div><br></div>-->
+<!--<a id="buyShares" class="readmore" data-toggle="modal" href="#buy-modal">Buy Shares</a>-->
+<!--<a id="buyShares" class="readmore transaction-button" ng-click="showForm()" ng-show="buttonVisible">Buy Shares</a>-->
+<!--<a id="sellShares" class="readmore" data-toggle="modal" href="#sell-modal">Sell Shares</a>-->
+<!--<a id="sellShares" class="readmore transaction-button" ng-click="showSaleForm()" ng-show="sellButtonVisible">Sell Shares</a>-->
+<!--<br>-->
+<!--<div id="purchase-form" class="buy-sell" ng-show="formVisible">-->
+<!--Enter number of shares to buy:<br>-->
+<!--<input id="purchase-quantity" type="number" placeholder="Shares"><br>-->
+
+<!--<a id="buy" class="readmore transaction" ng-click="buyShares(); updateFunds(); purchaseReset();">Buy</a>-->
+<!--<a class="readmore cancel" ng-click="purchaseReset();">Cancel</a>-->
+<!--</div>-->
+<!--<div id="sale-form" ng-show="saleFormVisible"  class="buy-sell">-->
+<!--Enter number of shares to sell:<br>-->
+<!--<input id="sale-quantity" type="number" placeholder="Shares"><br>-->
+<!--<a class="readmore" data-toggle="modal" href="#sell-modal">Sell</a>-->
+<!--<a id="sell" class="readmore transaction" ng-click="sellShares(); updateFunds(); purchaseReset();">Sell</a>-->
+<!--<a class="readmore cancel" ng-click="purchaseReset();">Cancel</a>-->
+<!--</div>-->
+<!--</div>-->
+

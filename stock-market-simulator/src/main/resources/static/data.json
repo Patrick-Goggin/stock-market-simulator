@@ -1,0 +1,261 @@
+[
+  {
+    "name":"Angular JS",
+    "shortname":"Angular_JS",
+    "reknown":"Javascript Framework",
+    "bio":"Angular JS is a frontend javascript framework. I used it to build this site.",
+    "keywords":""
+    }, {
+    "name":"HTML 5",
+    "shortname":"HTML_5",
+    "reknown":"Markup Language",
+    "bio":"HTML 5 is supported by all recent browsers. It is the is the language of the internet.",
+    "keywords":""
+    },{
+   "name":"Java",
+   "shortname":"Java",
+   "reknown":"Programming Language",
+   "bio":"Java is a programming language.",
+   "keywords":""
+   },{
+   "name":"JUnit",
+   "shortname":"JUnit",
+   "reknown":"Testing Framework",
+   "bio":"JUnit is a java testing framework.",
+   "keywords":""
+   },{
+   "name":"AJAX",
+   "shortname":"AJAX",
+   "reknown":"AJAX",
+   "bio":"AJAX",
+   "keywords":""
+   },{
+   "name":"SQL",
+   "shortname":"SQL",
+   "reknown":"SQL",
+   "bio":"SQL",
+   "keywords":""
+ },{
+   "name":"git",
+   "shortname":"git",
+   "reknown":"git",
+   "bio":"git",
+   "keywords":""
+ },{
+   "name":"REST",
+   "shortname":"REST",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Object Oriented Programming",
+   "shortname":"OOP",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Test-driven Development",
+   "shortname":"TDD",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+   },{
+   "name":"Spring Frameworks",
+   "shortname":"Spring",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+   },{
+   "name":"AGILE",
+   "shortname":"AGILE",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+   },{
+   "name":"HTTP",
+   "shortname":"HTTP",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+   },{
+   "name":"Universal Modeling Language",
+   "shortname":"UML",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+   },{
+   "name":"Javascript",
+   "shortname":"Javascript",
+   "reknown":"Scripting Language",
+   "bio":"Client-side Scripting Language",
+   "keywords":"js"
+ },{
+   "name":"XML",
+   "shortname":"XML",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Sketch",
+   "shortname":"Sketch",
+   "reknown":"",
+   "bio":"Prototyping Tool For Macs",
+   "keywords":""
+ },{
+   "name":"Axure RP",
+   "shortname":"Axure_RP",
+   "reknown":"",
+   "bio":"Rapid Prototyping Tool",
+   "keywords":""
+ },{
+   "name":"Bootstrap",
+   "shortname":"Bootstrap",
+   "reknown":"",
+   "bio":"Responsive CSS and Javascript Framework",
+   "keywords":""
+ },{
+   "name":"jQuery",
+   "shortname":"jQuery",
+   "reknown":"Javascript Library",
+   "bio":"jQuery is a robust javascript library that powers tons of the web's dynamic functionality.",
+   "keywords":"js library"
+ },{
+   "name":"Adobe Photoshop",
+   "shortname":"Photoshop",
+   "reknown":"Raster Graphics Editor",
+   "bio":"Photoshop is the de facto industry standard in raster graphics editing.",
+   "keywords":"adobe image creation photo design editing creative cloud suite CC"
+ },{
+   "name":"Adobe Illustrator",
+   "shortname":"Illustrator",
+   "reknown":"",
+   "bio":"Illustrator is the industry standard in two-dimensional vector graphics creation and editing.",
+   "keywords":"adobe image creation photo design editing creative cloud suite CC"
+ },{
+   "name":"Adobe InDesign",
+   "shortname":"InDesign",
+   "reknown":"",
+   "bio":"InDesign is a text layout application.",
+   "keywords":"adobe image creation photo design editing creative cloud suite CC"
+ },{
+   "name":"Adobe After Effects",
+   "shortname":"After_Effects",
+   "reknown":"Motion Graphics Editor",
+   "bio":"After Effects is a motion graphics editor used for editing video and creating animations.",
+   "keywords":"adobe image creation photo design editing creative cloud suite video animation CC"
+ },{
+   "name":"Adobe Flash",
+   "shortname":"Flash",
+   "reknown":"",
+   "bio":"Flash is an application for creating responsive motion graphics and animations.",
+   "keywords":"adobe image creation photo design editing creative cloud suite video animation CC"
+ },{
+   "name":"Node.js",
+   "shortname":"Node_js",
+   "reknown":"",
+   "bio":"",
+   "keywords":"js node framework server angular MEAN stack"
+ },{
+   "name":"Node Package Manager",
+   "shortname":"npm",
+   "reknown":"",
+   "bio":"Node Package Manager is the build tool used to configure Node.js",
+   "keywords":"js node framework server angular MEAN stack"
+ },{
+   "name":"Maven",
+   "shortname":"Maven",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Apache",
+   "shortname":"Apache",
+   "reknown":"Web Server",
+   "bio":"Java Web Server",
+   "keywords":""
+ },{
+   "name":"Apache Tomcat",
+   "shortname":"Apache_Tomcat",
+   "reknown":"Web Server",
+   "bio":"Tomcat is one flavor of Apache Web Server.",
+   "keywords":""
+ },{
+   "name":"Yeoman",
+   "shortname":"Yeoman",
+   "reknown":"Build Tool",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"MySQL",
+   "shortname":"MySQL",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Grunt",
+   "shortname":"Grunt",
+   "reknown":"Build Tool",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Apple",
+   "shortname":"Apple",
+   "reknown":"Operating System",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Microsoft",
+   "shortname":"Microsoft",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Linux/Unix",
+   "shortname":"Linux_Unix",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Bower",
+   "shortname":"Bower",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"Gradle",
+   "shortname":"Gradle",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"IntelliJ",
+   "shortname":"IntelliJ",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"JSP",
+   "shortname":"JSP",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"JSON",
+   "shortname":"JSON",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+   "name":"NetBeans",
+   "shortname":"NetBeans",
+   "reknown":"",
+   "bio":"",
+   "keywords":""
+ },{
+    "name":"CSS 3",
+    "shortname":"CSS_3",
+    "reknown":"Styling Language",
+    "bio":"CSS 3 the language used to style HTML content.",
+    "keywords":""
+ }
+]

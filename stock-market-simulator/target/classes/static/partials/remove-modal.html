@@ -1,0 +1,17 @@
+<div class="modal fade" id="remove-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Remove?</h4>
+            </div>
+            <div class="modal-body">
+                <p>This will remove the stock from from your portfolio. It will no longer be tracked, and all shares will be liquidated.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
+                <button type="button" ng-click="removeStock(); close('Yes'); update();" class="btn btn-primary" data-dismiss="modal">Yes</button>
+            </div>
+            </div>
+        </div>
+    </div>

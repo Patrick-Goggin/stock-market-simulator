@@ -1,0 +1,13 @@
+<h4 id="funds">Your funds: ${{funds}}</h4>
+<form>
+    <!--<input id="funds-input" name="funds-input" type="number" placeholder="add funds">-->
+    <!--<button ng-click="addFunds();">Add</button>-->
+    <div class="input-group" id="funds-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" id="funds-input" class="form-control" aria-label="Amount">
+        <span class="input-group-btn">
+        <button class="btn btn-primary" id="funds-button" type="button" ng-click="addFunds()">Add</button>
+      </span>
+    </div>
+</form>
+

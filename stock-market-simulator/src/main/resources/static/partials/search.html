@@ -1,0 +1,23 @@
+<!--<div class="search" id="search">-->
+    <!--<input id="search-input" ng-model="query" placeholder="Search for companies" ng-focus="searchFocus();">-->
+    <!--<ui id="search-order-buttons">-->
+        <!--<li class="radio-item">-->
+            <!--<a href="" id="ascending-button" class="button-stand-in checked"  ng-click="ascending(); reverseOrder();"></a><span class="radio-label">&nbsp;   ascending</span>-->
+        <!--</li>-->
+        <!--<li class="radio-item">-->
+            <!--<a href="" id="descending-button" class="button-stand-in" ng-click="descending(); reverseOrder();"></a><span class="radio-label">&nbsp;   descending</span>-->
+        <!--</li>-->
+    <!--</ui>-->
+<!--</div>-->
+<div id="list" class="center">
+    <div id="inner-list">
+    <ul ng-show="query">
+        <li ng-animate="'animate'" class="cf list-group-item result" ng-repeat="item in companies| filter: query | orderBy: companyOrder:direction">
+            <h5 class="search-item">{{item.name}}</h5>
+            <strong><a href="#" class="addLink" id="{{item.ticker}}" onclick="add()" ng-click="update()" title="add {{item.name}} to portfolio">
+               +
+            </a></strong>
+        </li>
+    </ul>
+        </div>
+</div>

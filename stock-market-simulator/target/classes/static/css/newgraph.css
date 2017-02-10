@@ -1,0 +1,36 @@
+path {
+				stroke: steelblue !important;
+				stroke-width: 1 !important;
+				fill: none !important;
+			}
+
+			.axis {
+			  shape-rendering: crispEdges;
+			}
+
+			.x.axis line {
+			  stroke: lightgrey;
+			}
+
+			.x.axis .minor {
+			  stroke-opacity: .5;
+			}
+
+			.x.axis path {
+			  display: none;
+			}
+
+.y.axis line{
+    stroke: lightgrey;
+}
+
+.y.axis path {
+			  fill: none;
+			  stroke: #000;
+			}
+
+#graph{
+/*z-index:3000;*/
+/*margin-left:0px;*/
+float:left;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"-->
+            <!--integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="-->
+            <!--crossorigin="anonymous"></script>-->
+    <script src="application.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/newgraph.js"></script>
+    <script src="pace.js"></script>
+    <script src="//rawgit.com/angular-ui/ui-router/0.2.15/release/angular-ui-router.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <!--<script src="https://rawgit.com/dwmkerr/angular-modal-service/master/dst/angular-modal-service.js"></script>-->
+    <script src="js/angular-modal-service.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/radioButtons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/newgraph.css">
+    <!--<link rel="stylesheet" href="css/graph.css">-->
+    <link rel="stylesheet" href="pace.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+</head>
+<body ng-app="mainApp" ng-cloak>
+
+<div ng-controller="stockController">
+
+    <nav class="navbar navbar-default" id="bar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <!--
+                <li class="nav-item"><a onclick="$('#details').hide(); $('#barChart').hide(); $('#list').show();">Search Stocks</a></li>
+                <li class="nav-item"><a ng-click="barChart()" onclick="$('#list').hide(); $('#barChart').show();">Your Portfolio</a></li>
+                -->
+
+                <div class="search" id="search">
+                    <div class="input-group" id="search-group">
+                        <div class="input-group-btn">
+                            <button type="button" id="direction" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <small><span class="glyphicon glyphicon-triangle-bottom"></span></small>
+                            </button>
+                            <div id="search-dropdown" class="dropdown-menu">
+                                <span><a class="dropdown-item" ng-click="ascending();" href="#">Ascending</a></span><br>
+                                <span><a class="dropdown-item" ng-click="descending();" href="#">Descending</a></span>
+                            </div>
+                        </div>
+                        <input type="text" id="search-input" ng-model="query" class="form-control" placeholder="Search for companies" aria-label="Search for companies" ng-focus="searchFocus();">
+                        <span id="search-addon" class="input-group-addon"><span id="search-glyph" class="glyphicon glyphicon-search"></span></span>
+                    </div>
+                    <!--<ui id="search-order-buttons">-->
+                    <!--<li class="radio-item">-->
+                    <!--<a href="" id="ascending-button" class="button-stand-in checked"  ng-click="ascending(); reverseOrder();"></a><span class="radio-label">&nbsp;   ascending</span>-->
+                    <!--</li>-->
+                    <!--<li class="radio-item">-->
+                    <!--<a href="" id="descending-button" class="button-stand-in" ng-click="descending(); reverseOrder();"></a><span class="radio-label">&nbsp;   descending</span>-->
+                    <!--</li>-->
+                    <!--</ui>-->
+
+                </div>
+
+            </ul>
+            <!--<ul class="nav navbar navbar-right" id="login-register">-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="signed-in-as" class="white nav-right nav-item">{{signedInAs}}</a></li>
+                <!--<li ng-show="notLoggedIn"><a id="login" class="nav-right nav-item" data-toggle="modal" href="#login-modal">login</a></li>-->
+                <!--<li ng-show="loggedIn"><a id="logout" class="nav-right nav-item" data-toggle="modal" href="#logout-modal">log out</a></li>-->
+                <!--<li><a id="register" class="nav-right nav-item" data-toggle="modal" href="#register-modal">register</a></li>-->
+                <li><a id="login" class="nav-right nav-item" data-toggle="modal" href="#login-modal">login</a></li>
+                <li><a id="logout" class="nav-right nav-item" data-toggle="modal" href="#logout-modal">log out</a></li>
+                <li><a id="register" class="nav-right nav-item" data-toggle="modal" href="#register-modal">register</a></li>
+            </ul>
+            <!--</ul>-->
+            <!--<div class="search" id="search">-->
+            <!--<input id="search-input" ng-model="query" placeholder="Search for companies" ng-focus="searchFocus();">-->
+
+            <!--<ui id="search-order-buttons">-->
+            <!--<li class="radio-item">-->
+            <!--<a href="" id="ascending-button" class="button-stand-in checked"  ng-click="ascending(); reverseOrder();"></a><span class="radio-label">&nbsp;   ascending</span>-->
+            <!--</li>-->
+            <!--<li class="radio-item">-->
+            <!--<a href="" id="descending-button" class="button-stand-in" ng-click="descending(); reverseOrder();"></a><span class="radio-label">&nbsp;   descending</span>-->
+            <!--</li>-->
+            <!--</ui>-->
+            <!--</div>-->
+        </div>
+    </nav>
+
+    <div id="details" class="center col-sm-9">
+        <div ng-include src="'partials/details.html'"></div>
+    </div>
+
+    <div id="listWrap" class="col-sm-7" ng-show="showSearch">
+        <!--<div ng-controller="ListController">-->
+
+        <div ng-include src="'partials/search.html'" ng-show="showSearch"></div>
+        <div ng-include src="'partials/list.html'" ng-show="showSearch"></div>
+
+    </div>
+    <!--<div ng-include src="'partials/dropdown.html'"></div>-->
+
+
+    <!--<h4 class="white">{{firstName}}</h4>-->
+
+    <!--<a id="login" data-toggle="modal" href="#login-modal">login</a>-->
+    <!--<a id="register" data-toggle="modal" href="#register-modal">register</a>-->
+    <!--<a class="btn" data-toggle="modal" href="#remove-modal">Remove Modal</a><br>-->
+    <!--<a class="btn" data-toggle="modal" href="#buy-modal">Buy Modal</a><br>-->
+    <!--<a class="btn" data-toggle="modal" href="#sell-modal">Sell Modal</a>-->
+
+
+
+
+
+
+
+
+
+    <!--<div id="portfolioDetails" ng-include src="'partials/barChart.html'"></div>-->
+    <div id="right-panel" class="col-sm-3">
+        <div id="fundsDiv" ng-include src="'partials/funds.html'"></div>
+        <div ng-include src="'partials/portfolio.html'"></div>
+    </div>
+
+
+    <div ng-include src="'partials/buy-modal.html'"></div>
+    <div ng-include src="'partials/login-modal.html'"></div>
+    <div ng-include src="'partials/register-modal.html'"></div>
+    <div ng-include src="'partials/sell-modal.html'"></div>
+    <div ng-include src="'partials/remove-modal.html'"></div>
+    <div ng-include src="'partials/logout-modal.html'"></div>
+</div>
+
+
+
+<script src="js/graph.js"></script>
+<script src="js/newgraph.js"></script>
+</body>
+</html>
