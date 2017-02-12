@@ -29,11 +29,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
-import static sun.jvm.hotspot.HelloWorld.e;
 
-/**
- * Created by patrickgoggin on 1/28/17.
- */
+
 
 @Repository
 @Transactional

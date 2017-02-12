@@ -13,11 +13,8 @@ import javax.transaction.Transactional;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static com.sun.tools.doclint.Entity.quot;
 
-/**
- * Created by patrickgoggin on 2/4/17.
- */
+
 @Repository
 @Transactional
 @Component

@@ -15,11 +15,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static com.sun.deploy.config.JREInfo.getAll;
 
-/**
- * Created by patrickgoggin on 1/28/17.
- */
+
 
 @Component
 public class RecordQuotes{

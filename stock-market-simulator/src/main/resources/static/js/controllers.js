@@ -102,6 +102,7 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
                             $scope.stocks = null;
                         }
                         $('#graph-container').empty();
+                        $('#graph').empty();
                         $('#details').hide();
                         $('#barChart').empty();
                         $('#barChart').show();

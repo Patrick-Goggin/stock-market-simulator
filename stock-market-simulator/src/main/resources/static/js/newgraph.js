@@ -4,6 +4,7 @@
 
 
 function NewGraph(msg){
+    $('#graph').empty();
 		// define dimensions of graph
 		var m = [30, 0, 80, 40]; // margins
 		var w = 700 - m[1] - m[3]; // width
