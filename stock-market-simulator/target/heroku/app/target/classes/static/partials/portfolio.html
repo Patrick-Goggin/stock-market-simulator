@@ -1,0 +1,20 @@
+ <div id="portfolio">
+        <!--<h2 id="portfolio-heading" class="">Stock Portfolio</h2>-->
+        <h3 id="portfolio-heading">Stock Portfolio</h3>
+        <ul id="portfolio-container">
+            <!--<li ng-click="getDetails(); itemClicked($index);" ng-class="{ 'selected-class-name': $index == selectedIndex }" class="portfolio-item" ng-repeat="stock in stocks" ng-cloak>-->
+            <li class="portfolio-item" ng-repeat="stock in stocks" ng-cloak>
+                <!--<h5>-->
+                    <!--<a class="readmore" id="{{stock.t}}" ng-click="hideSearch(); getDetails(); itemClicked($index);" ng-class="{ 'selected-class-name': $index == selectedIndex }">-->
+                <!--<h5 class="no-margins">-->
+                    <a id="{{stock.t}}" class="details-link" ng-click="getDetails(); itemClicked($index);" ng-class="{ 'selected-class-name': $index == selectedIndex }">
+                        <!--<div class="portfolio-link">-->
+                        {{stock.name}}
+                        <!--</div>-->
+                    </a>
+                <!--</h5>-->
+
+                <!--</h5>-->
+            </li>
+        </ul>
+    </div>

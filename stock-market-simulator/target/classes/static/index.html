@@ -95,17 +95,18 @@
         </div>
     </nav>
 
+    <!--<div id="listWrap" class="col-sm-7" ng-show="showSearch">-->
+        <!--<div ng-controller="ListController">-->
+
+        <div id="search-frag" ng-include src="'partials/search.html'" ng-show="showSearch" class="col-sm-7"></div>
+        <!--<div ng-include src="'partials/list.html'" ng-show="showSearch"></div>-->
+
+    <!--</div>-->
     <div id="details" class="center col-sm-9">
         <div ng-include src="'partials/details.html'"></div>
     </div>
 
-    <div id="listWrap" class="col-sm-7" ng-show="showSearch">
-        <!--<div ng-controller="ListController">-->
 
-        <div ng-include src="'partials/search.html'" ng-show="showSearch"></div>
-        <div ng-include src="'partials/list.html'" ng-show="showSearch"></div>
-
-    </div>
     <!--<div ng-include src="'partials/dropdown.html'"></div>-->
 
 

@@ -78,7 +78,6 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
                             $scope.companyDetails = null;
                         }
                         count = response.data.shareCount;
-                        //alert(count);
                         $scope.companyDetails.shareCount = response.data.shareCount;
                     });
         }
@@ -288,6 +287,31 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
 
 /* LIST OF INDEXES *//* LIST OF INDEXES *//* LIST OF INDEXES */
 //controllers.controller('ListController', ['$scope', '$http', function ($scope, $http) {
+
+//function loadJSON(callback) {
+//
+//    var xobj = new XMLHttpRequest();
+//        xobj.overrideMimeType("application/json");
+//    xobj.open('GET', 'NYSE.json', true); // Replace 'my_data' with the path to your file
+//    xobj.onreadystatechange = function () {
+//          if (xobj.readyState == 4 && xobj.status == "200") {
+//            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+//            callback(xobj.responseText);
+////                     $scope.stocks = response.data;
+//            $scope.companies = data;
+//            $scope.companyOrder = 'name';
+//          }
+//    };
+//    xobj.send(null);
+// }
+//$scope.comanies = loadCompaniesAsync(function(){
+//$http.get('NYSE.json').success(function (data) {
+//            $scope.companies = data;
+//            $scope.companyOrder = 'name';
+//        return data;
+//        });
+//})
+
         $http.get('NYSE.json').success(function (data) {
             $scope.companies = data;
             $scope.companyOrder = 'name';
@@ -300,7 +324,6 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
                         if (response.data == null) {
                             $scope.stocks = null;
                         }
-                       // alert(response.data);
                         $scope.stocks = response.data;
                     });
         };
@@ -322,7 +345,6 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
         }
 
         $scope.hideSearch = function () {
-          //  alert("hide search");
           $scope.showSearch = false;
             $('#listWrap').hide();
             $('#details').show();
@@ -422,6 +444,25 @@ $http.post("/login", parameter)
                         $scope.userID = response.data.userID;
                         $scope.loggedIn = true;
                         $scope.notLoggedIn = false;
+                        //angular.element('#purchase-quantity').val('');
+                    });
+}
+
+$scope.logout = function(){
+$http.post("/logout")
+                    .then(function (response) {
+                      //  $scope.funds = null;
+                        if (response.data == null) {
+                            $scope.user = null;
+                        }
+                        $scope.funds = response.data.funds;
+                        $scope.firstName= response.data.firstName;
+                        $scope.signedInAs ="Not signed in";
+                        $scope.lastName= response.data.lastName;
+                        $scope.email= response.data.email;
+                        $scope.userID = response.data.userID;
+                        $scope.loggedIn = false;
+                        $scope.notLoggedIn = true;
                         //angular.element('#purchase-quantity').val('');
                     });
 }

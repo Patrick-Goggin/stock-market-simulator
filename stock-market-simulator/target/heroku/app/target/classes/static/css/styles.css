@@ -1,0 +1,736 @@
+body{
+/*background-color:#009fdc;*/
+/*background-color:#F5F5F5;*/
+background-color:#332F2E;
+/*width:80vw;*/
+}
+
+a{
+cursor:pointer;
+}
+
+a.readmore {
+    cursor:pointer;
+	color: #00adef;
+	text-decoration: none;
+	border:2px solid #aaa;
+	border-radius:4px;
+	-webkit-transition: color 0.5s ease, background 0.5s ease;
+	   -moz-transition: color 0.5s ease, background 0.5s ease;
+	     -o-transition: color 0.5s ease, background 0.5s ease;
+	        transition: color 0.5s ease, background 0.5s ease;
+}
+.form-control:focus {
+/*  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);*/
+  border-color: #ccc;
+  box-shadow: none;
+}
+a.addLink:link{
+display:inline;
+line-height:1em;
+text-decoration:none;
+color: #444;
+}
+
+a.addLink:hover{
+text-decoration:none;
+color:red;
+}
+
+a.addLink:active{
+text-decoration:none;
+color:red;
+}
+
+a.addLink:visited{
+text-decoration:none;
+}
+/*
+h1 {
+   color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order)
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+*/
+/*
+a:hover {
+	color: #444;
+	text-decoration:none;
+}
+*/
+.no-margins{
+line-height:2em;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+#company-name{
+line-height:1em;
+margin-top:0px;
+margin-bottom:0px;
+margin-right:10px;
+float:left;
+}
+
+#details-my-shares{
+display:block;
+width:auto;
+float:none;
+}
+
+#remove{
+width:100px;
+float:right;
+display:inline-block;
+}
+
+.radio-item{
+    color:white;
+/*    line-height:20px;
+display:inline-block;*/
+height:10px;
+background-color:orange;
+/*   baseline:5px;*/
+}
+
+.radio-label{
+    color:white;
+    vertical-align: top;
+    font-weight:bold;
+}
+
+a.button-stand-in{
+    border:3px solid #009fdc inset;
+    box-shadow: 0px 0px 0px 3px white;
+   /* -webkit-box-shadow: 0px 0px 0px 5px rgba(255,255,255,255);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(255,255,255,255);
+    box-shadow: 0px 0px 0px 5px rgba(255,255,255,255);
+    background-color:;*/
+}
+
+a:link.button-stand-in{
+    color: blue;
+    background-color:#009fdc;
+    display:inline-block;
+    width:8px;
+    height:8px;
+    border:3px solid #009fdc inset;
+    border-radius:50%;
+}
+
+/* visited link */
+/* a:visited.dd{
+    color: green;
+    background-color:red !important;
+}*/
+
+/* mouse over link */
+a.button-stand-in:hover{
+    background-color:purple;
+    color: hotpink;
+}
+
+/* selected link */
+a.button-stand-in:active{
+    background-color:purple;
+    color: blue;
+}
+
+a.readmore,
+a.author {
+	color: #aaa;
+	width:100%;
+	line-height: /*30px*/2em;
+	display: block;
+	background-color: #f6f6f6;
+	text-align: center;
+}
+
+body .active {
+  background-color: red !important;
+}
+
+a.readmore:hover,
+a.author:hover {
+	color: #fff;
+	background-color: #00adef;
+	border:2px solid #00adef;
+}
+
+
+a.readmore {
+padding-top:3px;
+padding-bottom:3px;
+/*	right: 15px;*/
+width: 100%;
+}
+a.dropdown-item{
+display:inline-block;
+width:100%;
+color:#131313;
+text-decoration:none;
+}
+a.dropdown-item:link{
+color:#131313;
+text-decoration:none;
+}
+a.dropdown-item:hover{
+color:#131313;
+background-color:#A9A9AA;
+text-decoration:none;
+}
+/*a.active{
+background-color:red !important;
+color:white;
+}
+a.active :link{
+background-color:red !important;
+color:white;
+}*/
+
+/*.active {
+  background: $readmore-active;
+}
+.disabled {
+  background: #eee;
+  color: #aaa;
+}
+*/
+#signed-in-as{
+color:white;
+text-decoration:none;
+}
+#signed-in-as:hover{
+color:white;
+text-decoration:none;
+}
+.nav-item{
+margin-left:2px;
+margin-right:2px;
+}
+
+.center{
+/*max-height:580px;*/
+overflow-y: scroll;
+/*padding:5px;*/
+/*border-bottom: 1px solid #fff;*/
+/*margin-top:10px;
+margin-bottom:;10px;*/
+/*min-width:520px;*/
+background-color:white;
+float:left;
+}
+
+#listWrap{
+/*background-color:red;*/
+/*float:left;*/
+/*padding:0px 5px 5px 5px;
+background-color:red;*/
+}
+
+#list{
+max-width:520px;
+margin-bottom:10px;
+margin-top:0px;
+/*border:1px solid #ddd;*/
+box-shadow: 0px 1px 1px 0px #aaa;
+/*border:2px solid orange;*/
+}
+/*
+#inner-list{
+width:100%;
+height:100%;
+background-color:red;
+box-shadow: 1px 5px 1px 5px #aaa;
+}*/
+/*
+a.readmore.addLink{
+display:inline;
+padding:3px;
+height:30px;
+}
+*/
+#myModal{
+z-index:2000;
+}
+
+a.details-link{
+color:#A9A9AA;
+/*background-color:;*/
+padding: 2px 0px 2px 10px;
+/*font-weight:bold;*/
+font-size:1em;
+width:100%;
+height:100%;
+display:inline-block;
+text-decoration:none;
+}
+
+a.details-link:hover{
+color:white;
+padding: 2px 0px 2px 10px;
+font-weight:bold;
+font-size:1em;
+width:100%;
+height:100%;
+display:inline-block;
+text-decoration:none;
+}
+
+.portfolio-link{
+width:100%;
+height:100%;
+background-color:purple;
+}
+
+#details{
+/*
+max-width:700px;
+margin-left:15px;
+margin-right:15px;
+max-height:800px;
+height:700px;*/
+/*height:120%;*/
+margin-top:0px;
+padding:20px;
+/*width:100%;*/
+/*border:1px solid #ddd;*/
+/*box-shadow: 0px 1px 1px 0px #aaa;
+overflow-x:hidden;
+overflow-y:show;*/
+background-color:white;
+height:100%;
+position:fixed;
+bottom:0;
+top:45px;
+left:0;
+z-index:-1;
+}
+
+li{
+list-style-type:none;
+}
+
+.details-field{
+text-align:left;
+}
+.details-data{
+text-align:right;
+float:right;
+}
+
+hr{
+line-height:2px;
+}
+
+h2{
+margin-right:0px;
+padding-right:0px;
+}
+h5{
+line-height:100%;
+margin:0px;
+}
+
+/*.info{
+max-width:200px;
+max-height:400px;
+margin-left:0px;
+}*/
+
+.navbar .navbar-default #bar{
+height: 45px;
+position:fixed;
+margin-bottom:0px;
+/*background-color:#4E9455;*/
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06589b+0,66d686+99 */
+/*
+background: #06589b;
+background: -moz-linear-gradient(top,  #06589b 0%, #66d686 99%);
+background: -webkit-linear-gradient(top,  #06589b 0%,#66d686 99%);
+background: linear-gradient(to bottom,  #06589b 0%,#66d686 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06589b', endColorstr='#66d686',GradientType=0 );*/
+/*background:#131313;*/
+border: 0px 0px 1px 0px;
+border-bottom:1px solid orange;
+border-radius:0;
+}
+/*
+#bar{
+height: 50px;
+width:100%;
+position:fixed;
+background-color:#35D379;
+}
+*/
+
+
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {
+min-height:45px !important;
+/*background-color:#4E9455;*/
+/*
+background: #06589b;
+background: -moz-linear-gradient(top,  #06589b 0%, #66d686 99%);
+background: -webkit-linear-gradient(top,  #06589b 0%,#66d686 99%);
+background: linear-gradient(to bottom,  #06589b 0%,#66d686 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06589b', endColorstr='#66d686',GradientType=0 );*/
+/*background:#131313;*/
+background:#131313;
+border-bottom:1px solid #332F2E;
+border-left:0px solid black;
+border-right:0px solid black;
+border-top:0px solid black;
+border-radius:0;
+}
+
+.stock-panel{
+max-width: 300px;
+}
+#search{
+/*padding:5px 0px 10px 0px;
+height:100%;*/
+margin-top:5px;
+margin-left:10px;
+margin-bottom:0px;
+}
+
+#search-input{
+/*margin: 0px 5px 10px 20px;*/
+/*margin-left:20px;
+margin-top:5px;
+height:40px;
+width:400px;*/
+border-right:0px;
+box-shadow: none;
+margin-bottom:0px;
+}
+#search-addon{
+background-color:white;
+border-left:0px;
+}
+#search-glyph{
+
+}
+
+#direction{
+background-color:#eee;
+border:1px solid #ccc;
+}
+
+#direction:hover{
+background-color:#ccc;
+border:1px solid #ccc;
+}
+
+#arrow{
+
+}
+
+#search-group{
+max-width:400px;
+}
+
+#search-dropdown{
+width:100px;
+padding:5px;
+}
+/*
+#search-order-buttons{
+float:right;
+display:inline;
+background-color:red;
+margin-left:0px;
+margin-top:0px;
+}
+*/
+.search-result{
+line-height:100%;
+display:inline-block;
+}
+
+.list-group-item{
+
+}
+
+.result{
+border:0px !important;
+}
+/*
+#stockInfo{
+width:500px;
+height:100%;
+background-color:white;
+height:500px;
+width:600px;
+padding:10px;
+overflow-x:hidden;
+}*/
+
+#ticker-list{
+/*margin-top: 20px;*/
+}
+
+
+#graph-container{
+color:#C59E46/* #C59E46 = dark yellow */;
+/*border:1px solid blue;*/
+padding-left:0px;
+padding-top:0px;
+margin-left:0px;
+margin-top:0px;
+float:left;
+max-height:300px;
+background-color:white;
+/*float:right;*/
+}
+
+.info{
+/*max-width:200px;*/
+/*max-height:300px;*/
+padding-left:0px;
+/*padding-top:55px;*/
+margin-top:10px;
+/*float:left;*/
+margin-left:0px;
+background-color:white;
+max-width:200px;
+max-height:400px;
+margin-left:0px;
+}
+#topOf{
+/*border-top:1px solid green;*/
+}
+
+#portfolioDetails{
+background-color:white;
+}
+.light-gray{
+color:#666;
+}
+.white{
+color:white;
+}
+.char{
+/*color:#555;*/
+color:black;
+}
+/*#portfolio-heading{
+line-height:1em;
+margin:0px;
+padding:0px 0px 10px 0px;
+background-color:white;
+}*/
+
+.nav-right{
+float:right;
+}
+#login-register{
+display:inline;
+}
+.button{
+  font-family: sans-serif;
+  padding:5px;
+  border-color:#337ab7;
+  border-radius:3px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.button:hover{
+  font-family: sans-serif;
+  padding:5px;
+  color:#337ab7;
+  border-color:#31708f;
+  border-radius:3px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.button:active{
+  font-family: sans-serif;
+  padding:5px;
+  color:#31708f;
+  border-color:#337ab7;
+  border-radius:3px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/*
+.button {
+  border: none;
+  padding: 14px;
+  color: #fff;
+  margin: 0 10px;
+  background: $button;
+  font-weight: 700;
+  border-radius: 4px;
+}
+*/
+
+.selected-class-name {
+  color: white !important;
+  background-color:#1A1A1A;
+  font-weight:bold;
+/*background-color:#ccc;*/
+/*  color: red !important;*/
+}
+
+/*RADIO BUTTON STYLES*/
+.checked{
+background:red;
+}
+.unchecked{
+background:transparent;
+}
+
+.search-item{
+display:inline;
+}
+
+#barChart{
+margin-top:105px;
+}
+
+/*
+.readmore .transaction-button{
+width:100px;
+}
+*/
+
+#sellShares{
+width:100px;
+display:inline-block;
+}
+
+#buyShares{
+width:100px;
+display:inline-block;
+}
+
+.readmore.cancel{
+display:inline-block;
+width:80px;
+}
+
+#buy{
+width:50px;
+display:inline-block;
+}
+
+#sell{
+width:50px;
+display:inline-block;
+}
+
+#right-panel{
+max-width:350px;
+margin-right:0px;
+float:right;
+height:100%;
+/*background-color:#F5F5F5;*/
+/*height:100vh;*/
+background-color:#131313;
+overflow-y:show;
+padding:0px;
+position:fixed;
+bottom:0;
+top:0;
+right:0;
+z-index:-1;
+border-left:1px solid #332F2E;
+}
+
+#portfolio-heading{
+/*color:white;
+line-height:1em;
+display: inline;*/
+/*color:#A9A9AA;*/  /*gray*/
+color:white;
+/*color:#E7593A;*/  /*orange*/
+margin-left:10px;
+}
+
+#portfolio-container{
+max-width: 500px;
+margin-top:0px;
+margin-right:0px;
+padding-left:0px;
+height:70%;
+width:100%;
+float:left;
+overflow-y:auto;
+position:relative;
+border-bottom:1px solid #332F2E;
+border-top:1px solid #332F2E;
+background-color:#131313;
+}
+
+#portfolio{
+width:100%;
+height:100%;
+/*background-color:#F5F5F5;*/
+background-color:#131313;
+margin:0px;
+float:right;
+overflow-y:auto;
+position:fixed;
+border-top:1px solid #332F2E;
+border-bottom:1px solid #332F2E;
+}
+
+.portfolio-item{
+margin:0px;
+padding-left:0px;
+border-top:1px solid #1E1F1F;
+}
+
+.portfolio-item:hover{
+margin-bottom:0px;
+padding-left:0px;
+/*background-color:#ccc;*/
+background-color:#1A1A1A;
+}
+
+#funds{
+/*margin-right:30px;
+float:right;*/
+color:white;
+}
+
+#funds-group{
+width:80%;
+background-color:#131313;
+}
+
+#fundsDiv{
+/*margin-right:30px;
+float:right;*/
+margin-top:60px;
+margin-bottom:10px;
+padding-left:10px;
+/*background-color:#F5F5F5;*/
+background-color:#131313;
+}
+
+.buy-sell{
+height:200px;
+width:300px;
+text-align:left;
+}
+
+#details-dropdown{
+display:block;
+float:left;
+}
+.details-dropdown-item{
+width:100%;
+}
+.details-dropdown-item:hover{
+width:100%;
+background-color:red;
+}

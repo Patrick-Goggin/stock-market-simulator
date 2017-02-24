@@ -83,11 +83,11 @@ public class AccessApi {
         }else{
             stock.setPe(Double.parseDouble(response.getPe()));}
         if(response.getShares().isEmpty()){
-            response.setShares("?");
+            response.setShares("0");
         }else{
             stock.setShares(response.getShares());}
         if(response.getBeta().isEmpty()){
-            response.setBeta("?");
+            response.setBeta("0");
         }else{
             stock.setBeta(Double.parseDouble(response.getBeta()));}
         return stock;
@@ -121,11 +121,11 @@ public class AccessApi {
         }else{
             quote.setPe(Double.parseDouble(response.getPe()));}
         if(response.getShares().isEmpty()){
-            response.setShares("?");
+            response.setShares("0");
         }else{
             quote.setShares(response.getShares());}
         if(response.getBeta().isEmpty()){
-            response.setBeta("?");
+            response.setBeta("0");
         }else{
             quote.setBeta(Double.parseDouble(response.getBeta()));}
         return quote;
