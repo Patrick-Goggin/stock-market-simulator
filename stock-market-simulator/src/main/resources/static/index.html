@@ -75,9 +75,9 @@
             <!--<ul class="nav navbar navbar-right" id="login-register">-->
             <ul class="nav navbar-nav navbar-right">
                 <li><a id="signed-in-as" class="white nav-right nav-item">{{signedInAs}}</a></li>
-                <li ng-show="notLoggedIn"><a id="login" class="nav-right nav-item" data-toggle="modal" href="#login-modal">login</a></li>
-                <li ng-show="loggedIn"><a id="logout" class="nav-right nav-item" data-toggle="modal" href="#logout-modal">log out</a></li>
-                <li ng-show="notLoggedIn"><a id="register" class="nav-right nav-item" data-toggle="modal" href="#register-modal">register</a></li>
+                <li><a id="login" ng-show="notLoggedIn" class="nav-right nav-item" data-toggle="modal" href="#login-modal">login</a></li>
+                <li><a id="logout"  ng-show="loggedIn" class="nav-right nav-item" data-toggle="modal" href="#logout-modal">log out</a></li>
+                <li><a id="register" ng-show="notLoggedIn" class="nav-right nav-item" data-toggle="modal" href="#register-modal">register</a></li>
             </ul>
             <!--</ul>-->
             <!--<div class="search" id="search">-->

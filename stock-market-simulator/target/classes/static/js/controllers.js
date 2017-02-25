@@ -15,7 +15,7 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
                                 $scope.currentUser.email = response.data.email;
                                 $scope.currentUser.userID = response.data.userID;
                                 $scope.funds = response.data.funds;
-                                $scope.notLoggedIn=true;
+//                                $scope.notLoggedIn=true;
                                 if(response.data.firstName){
                                     $scope.currentUser = response.data;
                                     $scope.currentUser.firstName = response.data.firstName;
@@ -26,11 +26,15 @@ mainApp.controller('stockController', ['$scope', '$http', function ($scope, $htt
                                     $scope.signedInAs = ("Signed in as " + response.data.firstName);
                                     $scope.loggedIn = true;
                                     $scope.notLoggedIn = false;
+                                    angular.element('#register').hide();
+                                    angular.element('#login').hide();
                                 }
                                 if(!response.data.firstName){
                                     $scope.loggedIn = false;
                                     $scope.notLoggedIn = true;
                                     $scope.signedInAs = ("Not signed in");
+                                    angular.element('#register').show();
+                                    angular.element('#login').show();
                                 }
                             });
 
@@ -463,6 +467,8 @@ $http.post("/logout")
                         $scope.userID = response.data.userID;
                         $scope.loggedIn = false;
                         $scope.notLoggedIn = true;
+                        angular.element('#register').show();
+                        angular.element('#login').show();
                         //angular.element('#purchase-quantity').val('');
                     });
 }
